@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bill_background"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    tools:context=".StatusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/title_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almoni_black"
+            android:gravity="center|right"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:text="טיפולים פעילים"
+            android:textColor="@color/background_light_screen"
+            android:textSize="30dp" />
+
+
+        <ListView
+            android:id="@+id/listStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/almoni_regular"
+            android:paddingLeft="30dp"
+            android:layout_marginRight="20dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

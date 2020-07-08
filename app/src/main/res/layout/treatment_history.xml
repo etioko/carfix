@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/treathistory"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/almoni_regular"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/background_light_screen"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

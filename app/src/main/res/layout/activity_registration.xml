@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.final_project.carfix.RegistrationActivity"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_ragistraion"
+    android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/logo_for_registration"/>
+
+                <TextView
+                    android:id="@+id/title_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="חבר חדש"
+                    android:fontFamily="@font/almoni_bold"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="rtl"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/permission"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/almoni_regular"
+                android:background="@drawable/spinner_border"
+                android:paddingRight="10dp"
+                android:textDirection="rtl"
+                android:scrollbarSize="18dp" />
+
+            <EditText
+                android:id="@+id/clientId"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingRight="15dp"
+                android:ems="10"
+                android:background="@drawable/button_register"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/almoni_light"
+                android:hint="תעודת זהות"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:ems="10"
+                android:hint="שם פרטי"
+                android:background="@drawable/button_register"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/almoni_light"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/userLastName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingRight="15dp"
+                android:ems="10"
+                android:hint="שם משפחה"
+                android:background="@drawable/button_register"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/almoni_light"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/userAdd"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_register"
+                android:ems="10"
+                android:hint="כתובת מגורים"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/almoni_light"
+                android:textColorHint="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/userPhone"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingRight="15dp"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="מספר נייד"
+                android:background="@drawable/button_register"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="35dp"
+                android:fontFamily="@font/almoni_light"
+                android:inputType="phone" />
+
+            <LinearLayout
+                android:id="@+id/llcardetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#1e3944"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="פרטי רכב"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="25dp"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/almoni_bold"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:id="@+id/userCarNumber"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="מספר רכב"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_register"
+                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/almoni_light"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/carType"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:paddingRight="10dp"
+                    android:textDirection="rtl"
+                    android:fontFamily="@font/almoni_regular"
+                    android:background="@drawable/spinner_border"
+                    android:scrollbarSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/carModel"
+                    android:layout_width="250dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/spinner_border"
+                    android:fontFamily="@font/almoni_regular"
+                    android:paddingRight="10dp"
+                    android:scrollbarSize="20dp"
+                    android:textDirection="rtl" />
+
+                <EditText
+                    android:id="@+id/caryear"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="שנת הרכב"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_register"
+                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/almoni_light"
+                    android:paddingRight="15dp"
+                    android:inputType="number" />
+                <EditText
+                    android:id="@+id/carcode"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="קוד הרכב"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_register"
+                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:paddingRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/almoni_light"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/almoni_bold"
+                    android:text="התחברות"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/userEmail"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userAdd"
+                    android:layout_alignStart="@+id/userAdd"
+                    android:layout_alignLeft="@+id/userAdd"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_register"
+                    android:ems="10"
+                    android:fontFamily="@font/almoni_light"
+                    android:hint="כתובת אימייל"
+                    android:inputType="textEmailAddress"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/userPass"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_register"
+                    android:ems="10"
+                    android:fontFamily="@font/almoni_light"
+                    android:gravity="right"
+                    android:hint="סיסמא"
+                    android:inputType="textPassword"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/register2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/backgroundsignin"
+                    android:fontFamily="@font/almoni_regular"
+                    android:textStyle="bold"
+                    android:text="כניסה"
+                    android:textColor="@color/background" />
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>

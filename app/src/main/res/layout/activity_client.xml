@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/client_background"
+    android:gravity="center|top"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    tools:context="com.final_project.carfix.ClientActivity">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/history"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/history_tr"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/future_func"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/future_icon"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/show_details"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/client_details"/>
+
+        <ImageView
+            android:id="@+id/contact"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/contact_us_icon"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:paddingTop="70dp"
+            android:text="שלום"
+            android:textSize="30sp"
+            android:textColor="@color/background"
+            android:fontFamily="@font/almoni_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/arrivle_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:paddingRight="10dp"
+            android:paddingTop="140dp"
+            android:text=""
+            android:textColor="@color/background_light_screen"
+            android:fontFamily="@font/almoni_regular"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/arrivle_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="@string/treat"
+            android:textColor="@color/background_light_screen"
+            android:fontFamily="@font/almoni_regular"
+            android:paddingRight="10dp"
+            android:textSize="24dp" />
+
+        <!--<Button-->
+            <!--android:id="@+id/start"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="התחל" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/cancel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="בטל" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">CarFix</string>
+    <string-array name="carType">
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Buick</item>
+        <item>Chevrolet</item>
+        <item>Chrysler</item>
+        <item>Citroen</item>
+        <item>Daihatsu</item>
+        <item>Fiat</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Hyudai</item>
+        <item>Isuzu</item>
+        <item>Kia</item>
+        <item>Mazda</item>
+        <item>Mercedes</item>
+        <item>Mitsubishi</item>
+        <item>Nissan</item>
+        <item>Opel</item>
+        <item>Peugeot</item>
+        <item>Renault</item>
+        <item>Seat</item>
+        <item>Skoda</item>
+        <item>Ssangyong</item>
+        <item>Subaru</item>
+        <item>Suzuki</item>
+        <item>Toyota</item>
+        <item>Volkswagen</item>
+        <item>Volvo</item>
+        <item>אחר</item>
+    </string-array>
+
+    <string-array name="carModels">
+        <item>פרטי</item>
+        <item>מסחרי</item>
+    </string-array>
+
+    <string-array name="permissionArray">
+        <item>לקוח</item>
+        <item>יועץ שירות</item>
+    </string-array>
+
+    <string-array name="treatArray">
+        <item>טיפול נוכחי בלבד</item>
+        <item>טיפול קודם שהתפספס</item>
+        <item>טסט</item>
+        <item>תקלה</item>
+    </string-array>
+
+    <string name="treat">אין טיפול פעיל\n כרגע</string>
+
+    <string-array name="treatmentNeedArray">
+        <item>15000</item>
+        <item>30000</item>
+        <item>45000</item>
+        <item>60000</item>
+        <item>75000</item>
+        <item>90000</item>
+        <item>105000</item>
+        <item>120000</item>
+        <item>135000</item>
+        <item>150000</item>
+        <item>165000</item>
+        <item>180000</item>
+        <item>195000</item>
+    </string-array>
+
+    <string name="data_type">data_type</string>
+    <string name="direct_message">direct_message</string>
+    <string name="data_message">message</string>
+    <string name="data_title">title</string>
+    <string name="data_message_id">message_id</string>
+</resources>

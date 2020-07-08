@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/show_treatmet_background"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    tools:context=".EditExitTimeActivity">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/history_tr"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/history_tr"/>
+
+        <ImageView
+            android:id="@+id/treatment_add_manager"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/treatmet_add" />
+
+        <ImageView
+            android:id="@+id/pencil"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/pencil"/>
+        <ImageView
+            android:id="@+id/edit_prediction"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/change_time_clicked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/title_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almoni_black"
+            android:gravity="center|right"
+            android:paddingTop="20dp"
+            android:text="עדכון מועד\nלסיום הטיפול"
+            android:textColor="@color/background_light_screen"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almoni_light"
+            android:gravity="center|right"
+            android:paddingTop="20dp"
+            android:text="רכב"
+            android:textColor="@color/background_light_screen"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almoni_regular"
+            android:gravity="center|right"
+            android:textColor="@color/background_light_screen"
+            android:text="h"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/textViewdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/almoni_bold"
+            android:textColor="@color/background_light_screen"
+            android:text="זמן יציאה משוער"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/exit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/almoni_regular"
+            android:gravity="center"
+            android:text="יציאה"
+            android:textColor="@color/background_light_screen"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:fontFamily="@font/almoni_bold"
+            android:textColor="@color/background_light_screen"
+            android:gravity="right"
+            android:text="בחר שעת יציאה עדכנית"
+            android:textSize="22dp" />
+
+        <Spinner
+            android:id="@+id/spinner_date"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/spinner_border"
+            android:scrollbarSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/hours_enter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/dots"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/background_light_screen"
+                android:textSize="30dp"
+                android:fontFamily="@font/almoni_bold"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/minutes_enter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="time" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/almoni_regular"
+            android:textStyle="bold"
+            android:text="עדכן"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

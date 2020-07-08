@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_treatment"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    tools:context="com.final_project.carfix.TreatmentActivity">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/history_clicked"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/history_tr" />
+
+        <ImageView
+            android:id="@+id/treatmet_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/treatment_clicked" />
+
+        <ImageView
+            android:id="@+id/edit_details"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/pencil" />
+
+        <ImageView
+            android:id="@+id/future_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/future_icon" />
+
+        <ImageView
+            android:id="@+id/show_details"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/client_details"/>
+        <ImageView
+            android:id="@+id/edit_prediction"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/change_time"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_treatment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|right"
+        android:paddingRight="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_treatment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingTop="20dp"
+            android:text="טיפול חדש"
+            android:fontFamily="@font/almoni_black"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textmileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almoni_regular"
+            android:text="קילומטראג':"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite" />
+        <EditText
+            android:id="@+id/mileage"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="קילומטראז"
+            android:textSize="22dp"
+            android:textDirection="rtl"
+            android:fontFamily="@font/almoni_light"
+            android:background="@drawable/textview_bg"
+            android:textColorHint="@color/colorWhite"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textneed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="טיפול נדרש:"
+            android:fontFamily="@font/almoni_regular"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorWhite" />
+        <Spinner
+            android:id="@+id/treatment_need"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:background="@drawable/spinner_border_treatment"
+            android:scrollbarSize="18dp"/>
+
+        <Spinner
+            android:id="@+id/carTypeTreat"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_border_treatment"
+            android:scrollbarSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spinnerTreat"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_border_treatment"
+            android:scrollbarSize="18dp" />
+        <EditText
+            android:id="@+id/remarks"
+            android:layout_width="230dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="הערות"
+            android:gravity="top"
+            android:fontFamily="@font/almoni_light"
+            android:textSize="22dp"
+            android:background="@drawable/textview_bg"
+            android:textColorHint="@color/colorWhite"
+            android:inputType="textPersonName" />
+
+
+        <Button
+            android:id="@+id/uploadImage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/almoni_regular"
+            android:text="הוספת חשבונית" />
+
+        <Button
+            android:id="@+id/showImage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/almoni_regular"
+            android:text="צפיה בחשבונית" />
+
+        <Button
+            android:id="@+id/addTreat"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/backgroundsignin"
+            android:text="התחל טיפול"
+            android:textColor="@color/background"
+            android:fontFamily="@font/almoni_regular"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
